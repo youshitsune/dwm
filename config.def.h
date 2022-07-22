@@ -71,7 +71,7 @@ static Key keys[] = {
 		        /* modifier                     key        function        argument */
 		        { MODKEY,                       XK_s,      spawn,          {.v = dmenucmd } },
 				{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
-				{ MODKEY, XK_w, spawn, SHCMD("brave-nightly")},
+				{ MODKEY, XK_w, spawn, SHCMD("firefox")},
 				{0, XF86XK_AudioMute, spawn, SHCMD("pamixer -t;kill -44 $(pidof dwmblocks)")},
 				{0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer -i 5 --allow-boost; kill -44 $(pidof dwmblocks)")},
 				{0, XF86XK_AudioLowerVolume, spawn, SHCMD("pamixer -d 5 --allow-boost; kill -44 $(pidof dwmblocks)")},
