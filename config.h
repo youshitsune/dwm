@@ -90,7 +90,7 @@ static Key keys[] = {
 				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
-
+				{ MODKEY, XK_o, spawn, SHCMD("obsidian")},
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
 				TAGKEYS(                        XK_3,                      2)
