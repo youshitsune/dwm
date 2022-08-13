@@ -71,7 +71,7 @@ static Key keys[] = {
 		        /* modifier                     key        function        argument */
 		        { MODKEY,                       XK_s,      spawn,          {.v = dmenucmd } },
 				{ MODKEY,             XK_Return, spawn,          {.v = termcmd } },
-				{ MODKEY, XK_w, spawn, SHCMD("kill $(pidof firefox); firefox")},
+				{ MODKEY, XK_w, spawn, SHCMD("brave-nightly")},
 				{0, XF86XK_AudioMute, spawn, SHCMD("pamixer -t;kill -44 $(pidof dwmblocks)")},
 				{0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer -i 5 --allow-boost; kill -44 $(pidof dwmblocks)")},
 				{0, XF86XK_AudioLowerVolume, spawn, SHCMD("pamixer -d 5 --allow-boost; kill -44 $(pidof dwmblocks)")},
@@ -89,6 +89,8 @@ static Key keys[] = {
 				{ MODKEY, XK_v, spawn, SHCMD("st vim ~/Documents/vimwiki/Home.md")},
 				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
+				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
+
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
 				TAGKEYS(                        XK_3,                      2)
