@@ -70,7 +70,8 @@ static const char *termcmd[]  = { "st", NULL };
 static Key keys[] = {
 		        /* modifier                     key        function        argument */
 		        { MODKEY,                       XK_s,      spawn,          {.v = dmenucmd } },
-				{ MODKEY,             XK_Return, spawn,         SHCMD("st tmux attach")},
+				{ MODKEY,             XK_Return, spawn,         SHCMD("st")},
+				{ MODKEY|ShiftMask,             XK_Return, spawn,         SHCMD("st tmux attach")},
 				{ MODKEY, XK_w, spawn, SHCMD("brave-nightly")},
 				{0, XF86XK_AudioMute, spawn, SHCMD("pamixer -t;kill -44 $(pidof dwmblocks)")},
 				{0, XF86XK_AudioRaiseVolume, spawn, SHCMD("pamixer -i 5 --allow-boost; kill -44 $(pidof dwmblocks)")},
