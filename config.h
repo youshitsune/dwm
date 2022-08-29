@@ -87,7 +87,6 @@ static Key keys[] = {
 				{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 				{ MODKEY|ShiftMask, XK_l, zoom, {0}},
 				{ MODKEY, XK_f, spawn, SHCMD("thunar")},
-				{ MODKEY, XK_v, spawn, SHCMD("st vim ~/Documents/vimwiki/Home.md")},
 				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
