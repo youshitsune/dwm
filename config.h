@@ -91,7 +91,9 @@ static Key keys[] = {
 				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
-				{ MODKEY, XK_o, spawn, SHCMD("obsidian")},
+		        	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+				{ MODKEY, XK_o, setmfact, {.f = +0.05}},
+				{ MODKEY|ShiftMask, XK_o, setmfact, {.f = -0.05}},
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
 				TAGKEYS(                        XK_3,                      2)
@@ -101,7 +103,6 @@ static Key keys[] = {
 				TAGKEYS(                        XK_7,                      6)
 				TAGKEYS(                        XK_8,                      7)
         		TAGKEYS(                        XK_9,                      8)
-		        { MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
 
