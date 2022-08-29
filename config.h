@@ -90,6 +90,7 @@ static Key keys[] = {
 				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
+				{ MODKEY, XK_n, spawn, SHCMD("simplenote")},
 		        	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 				{ MODKEY, XK_o, setmfact, {.f = +0.05}},
 				{ MODKEY|ShiftMask, XK_o, setmfact, {.f = -0.05}},
