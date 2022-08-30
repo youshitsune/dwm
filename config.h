@@ -94,6 +94,7 @@ static Key keys[] = {
 		        	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 				{ MODKEY, XK_i, setmfact, {.f = +0.05}},
 				{ MODKEY|ShiftMask, XK_i, setmfact, {.f = -0.05}},
+                { MODKEY, XK_d, spawn, SHCMD("discord") },
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
 				TAGKEYS(                        XK_3,                      2)
