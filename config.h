@@ -95,6 +95,7 @@ static Key keys[] = {
 				{ MODKEY, XK_i, setmfact, {.f = +0.05}},
 				{ MODKEY|ShiftMask, XK_i, setmfact, {.f = -0.05}},
                 { MODKEY, XK_d, spawn, SHCMD("discord") },
+                { MODKEY, XK_c, spawn, SHCMD("zohomail --no-sandbox") },
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
 				TAGKEYS(                        XK_3,                      2)
