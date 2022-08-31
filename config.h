@@ -91,7 +91,7 @@ static Key keys[] = {
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
 				{ MODKEY, XK_n, spawn, SHCMD("dynalist --no-sandbox")},
-		        	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+		        	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
 				{ MODKEY, XK_i, setmfact, {.f = +0.05}},
 				{ MODKEY|ShiftMask, XK_i, setmfact, {.f = -0.05}},
                 { MODKEY, XK_d, spawn, SHCMD("discord") },
