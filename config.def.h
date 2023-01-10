@@ -87,7 +87,7 @@ static Key keys[] = {
 				{ MODKEY|ShiftMask, XK_l, zoom, {0}},
 				{ MODKEY, XK_f, spawn, SHCMD("thunar")},
 				{ MODKEY, XK_v, spawn, SHCMD("st vim ~/Documents/vimwiki/Home.md")},
-				{ MODKEY, XK_d, spawn, SHCMD("onlyoffice-desktopeditors")},
+				{ MODKEY, XK_d, spawn, SHCMD("libreoffice")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				TAGKEYS(                        XK_1,                      0)
 				TAGKEYS(                        XK_2,                      1)
