@@ -90,7 +90,7 @@ static Key keys[] = {
 				{ MODKEY, XK_o, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
 				{0, XK_Print, spawn, SHCMD("gnome-screenshot -i")},
-				{ MODKEY, XK_n, spawn, SHCMD("notesnook --no-sandbox")},
+				{ MODKEY, XK_n, spawn, SHCMD("vim ~/Documents/Notes/index.md")},
 		        	{ MODKEY|ShiftMask,             XK_p,      quit,           {0} },
 				{ MODKEY, XK_i, setmfact, {.f = +0.05}},
 				{ MODKEY|ShiftMask, XK_i, setmfact, {.f = -0.05}},
