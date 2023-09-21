@@ -86,6 +86,7 @@ static Key keys[] = {
 				{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 				{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 				{ MODKEY|ShiftMask, XK_l, zoom, {0}},
+                { MODKEY, XK_a, spawn, SHCMD("arduino-ide --no-sandbox")},
 				{ MODKEY, XK_f, spawn, SHCMD("pcmanfm")},
 				{ MODKEY, XK_o, spawn, SHCMD("onlyoffice-desktopeditors")},
 				{ MODKEY, XK_p, spawn, SHCMD("passmenu")},
